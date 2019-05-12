@@ -1,0 +1,43 @@
+/* TODO: Burde legge inn slags max width, og etter det vil total summen flyttes ned
+ pga noen kan tenke å legge et utrolig høyt sum. Eller så må det vurderes å redesigne
+ hvor summen være i en linje alene... men tror det er unødvendig 
+ 
+ TODO: Kanskje legg til skygge 
+ 
+ TODO: LEGG TheyOweTotal og YouOweTotal i samme JS fil, og så kan de bruke samme css lib*/
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 125px;
+    /* Top, right, bottom, left */
+    margin: 26px 50px 0px 26px;
+    border-radius: 10px;
+    float: left; /* Vurder, padding ble wierd med denne pA */
+    background: #49CF64;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: start;
+}
+
+.theyOwe {
+    position: absolute;
+    margin: 10px;
+    top: 0%;
+}
+
+.totalText {
+    position: absolute;
+    margin: 10px;
+    bottom: 0;
+}
+
+.totalNumbers {
+    position: absolute;
+    margin: 10px;
+    right: 0;
+    bottom: 0;
+    /* 2*parent font size */
+    font-size: 2em;
+}
